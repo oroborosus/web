@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dmitry Davydov — Senior Software Engineer</title>
+<style>
+  @page { size: Letter; margin: 0.46in 0.54in 0.48in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; color: #181818; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.15pt;
+    line-height: 1.28;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  main { max-width: 7.42in; margin: 0 auto; }
+  header { margin-bottom: 0.12in; }
+  h1 {
+    margin: 0;
+    font-size: 24pt;
+    line-height: 1.02;
+    letter-spacing: -0.35px;
+    font-weight: 700;
+  }
+  .headline {
+    margin-top: 3px;
+    font-size: 12pt;
+    font-weight: 700;
+  }
+  .contact, .location {
+    margin-top: 3px;
+    font-size: 9.3pt;
+  }
+  a { color: inherit; text-decoration: none; }
+  section { margin-top: 0.12in; }
+  h2 {
+    margin: 0 0 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #555;
+    font-size: 11.2pt;
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  p { margin: 0; }
+  .summary { line-height: 1.33; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 18px;
+  }
+  .skill-line { margin: 0; }
+  .skill-line strong { font-weight: 700; }
+  .job {
+    margin-top: 7px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .job:first-of-type { margin-top: 0; }
+  .job.major { break-inside: auto; page-break-inside: auto; }
+  .job-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .job-title { font-weight: 700; font-size: 10.55pt; }
+  .job-date { white-space: nowrap; font-weight: 700; font-size: 9.5pt; }
+  .company { margin-top: 1px; font-weight: 700; }
+  ul { margin: 3px 0 0 17px; padding: 0; }
+  li { margin: 1.5px 0; padding-left: 1px; }
+  .compact li { margin: 1px 0; }
+  .subrole {
+    margin-top: 5px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .subrole-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+    font-weight: 700;
+  }
+  .subrole-date { white-space: nowrap; font-size: 9.35pt; }
+  .education-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+  }
+  .education-row strong { font-size: 10.3pt; }
+  .small { font-size: 9.35pt; }
+  @media screen {
+    body { padding: 24px; background: #eee; }
+    main { background: white; padding: 0.46in 0.54in 0.48in; box-shadow: 0 1px 12px rgba(0,0,0,.15); }
+  }
+  @media print {
+    main { max-width: none; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Dmitry Davydov</h1>
+    <div class="headline">Senior Software Engineer | Backend, Java/JVM, Distributed Systems</div>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/oroboros/">linkedin.com/in/oroboros</a>
+    </div>
+    <div class="location">Mexico • CST • Remote</div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Senior backend and platform engineer with deep Java/JVM experience across distributed systems, developer infrastructure, data platforms, billing, reliability, and performance. Spent 11 years at Yandex / Yandex Market, progressing from backend engineering to Senior and Staff-level technical ownership. Strong at turning ambiguous, high-impact problems into practical architectures and production systems while staying hands-on with design, coding, debugging, and rollout.</p>
+  </section>
+
+  <section>
+    <h2>Core Skills</h2>
+    <div class="skills-grid">
+      <p class="skill-line"><strong>Backend:</strong> Java, JVM, Spring Boot, REST/HTTP APIs, microservices, distributed systems, HA</p>
+      <p class="skill-line"><strong>Data:</strong> SQL, PostgreSQL, Oracle, ClickHouse, MySQL/MariaDB, Vertica, OLTP/OLAP</p>
+      <p class="skill-line"><strong>Infrastructure:</strong> Linux, Docker, Terraform, CI/CD, observability, OpenTelemetry, Grafana</p>
+      <p class="skill-line"><strong>Data processing:</strong> Hadoop, map-reduce, streaming/data pipelines, large-scale analytics</p>
+      <p class="skill-line"><strong>Other languages:</strong> Python, Kotlin, Go; earlier PHP/JavaScript experience</p>
+      <p class="skill-line"><strong>Engineering leadership:</strong> architecture, mentoring, technical direction, cross-team delivery</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="job major">
+      <div class="job-head">
+        <div class="job-title">Yandex / Yandex Market — Software Engineer → Senior → Staff Engineer</div>
+        <div class="job-date">2014–2025</div>
+      </div>
+
+      <div class="subrole">
+        <div class="subrole-head">
+          <span>Staff Engineer — Java Developer Platform</span>
+          <span class="subrole-date">Nov 2022–Jun 2025</span>
+        </div>
+        <ul>
+          <li>Architected and helped build a Spring Boot–based microservice framework for ~2,000 engineers and ~600 Java services; adopted by 350 services.</li>
+          <li>Standardized service creation and infrastructure integration across build/CI, deployment, auth, testing, telemetry, databases, HA, service discovery, queues, and developer tooling; reduced new-service setup from 7+ days to about 2.</li>
+          <li>Personally built production components including adaptive CPU load shedding, OpenTelemetry migration, infrastructure drivers/libraries, authentication primitives, and Docker packaging.</li>
+          <li>Designed safe fleet-wide rollout patterns with metrics, early adopters, staged deployment, instant rollback, and mass observability; enabled broad adoption of changes such as OTEL, JIT warmup, and reliability defaults.</li>
+          <li>Built an automatic load shedder that, in favorable CPU-bound services, allowed up to ~1.5× more traffic without significant response-time degradation.</li>
+          <li>Owned major architecture decisions and technical direction while leading a 4-person team; maintained a substantial hands-on coding and production-debugging role.</li>
+        </ul>
+      </div>
+
+      <div class="subrole">
+        <div class="subrole-head">
+          <span>Senior / Staff Engineer — Analytics &amp; Data Infrastructure</span>
+          <span class="subrole-date">2019–2022</span>
+        </div>
+        <ul>
+          <li>Took ownership of a failing analytics platform serving Yandex Market; stabilized infrastructure operating at roughly 20 PB of data and 30K compute cores.</li>
+          <li>Built a 60-node ClickHouse presentation layer (~100 TB), reliable DFS-to-ClickHouse delivery processing up to ~20 TB/day, dependency visualization, monitoring, and predictable capacity planning.</li>
+          <li>Raised Tableau/reporting reliability to 99%+ availability and introduced end-to-end data readiness SLAs, sub-SLAs, data-quality ownership, and operational visibility.</li>
+          <li>Led architecture and delivery across engineers, data engineers, analysts, SREs, and business-critical teams; promoted to Senior in 2020 and Staff in 2022 for broad technical ownership and impact.</li>
+        </ul>
+      </div>
+
+      <div class="subrole">
+        <div class="subrole-head">
+          <span>Software Engineer — Billing, Antifraud &amp; Distributed Data Systems</span>
+          <span class="subrole-date">2014–2019</span>
+        </div>
+        <ul>
+          <li>Built and evolved money-sensitive Java services and APIs across Oracle, Hadoop, PostgreSQL, ZooKeeper, and Yandex's large-scale map-reduce platform, with strict correctness and HA requirements.</li>
+          <li>Rewrote legacy antifraud processing from Oracle to distributed data pipelines without downtime; later moved suitable filters to in-memory processing and PostgreSQL.</li>
+          <li>Online filtering removed roughly 80% of fraud clicks before slower batch processing; PostgreSQL-based filters reduced typical processing from ~40–120 minutes to ~20–25 minutes.</li>
+          <li>Owned antifraud and click-processing architecture across multiple Java services, data jobs, APIs, and hundreds of terabytes of data; promoted to Middle Engineer in early 2016.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Java Security / Infrastructure Engineer — CNII EISU</div>
+        <div class="job-date">2012–2014</div>
+      </div>
+      <ul class="compact">
+        <li>Integrated identity and permissions with Java Security Manager, Java EE, OSGi, application servers, databases, and APIs.</li>
+        <li>Developed a Javassist-based bytecode patcher enforcing annotation-based access control, gaining deep experience with JVM, bytecode, security, and framework internals.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">CTO / Technical Founder — dietaonline.ru</div>
+        <div class="job-date">2008–2012</div>
+      </div>
+      <ul class="compact">
+        <li>Designed, built, and operated the full technical stack of a consumer health platform that reached ~1M monthly visitors and ~10K hourly sessions.</li>
+        <li>Ran the product on constrained hardware through aggressive SQL/application optimization, nginx/PHP-FPM, MySQL, Sphinx search, caching, Linux administration, monitoring, backups, and production operations.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>Career Break</h2>
+    <div class="education-row">
+      <strong>Planned Sabbatical</strong>
+      <span class="small">2025–2026</span>
+    </div>
+    <p class="small">Took a planned break after 11 years at Yandex to travel in Latin America; now returning to hands-on software engineering.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="education-row">
+      <strong>Moscow Institute of Radio Engineering, Electronics and Automation</strong>
+      <span class="small">2003–2008</span>
+    </div>
+    <p class="small">Specialist Degree — Information Security of Telecommunication Systems</p>
+  </section>
+</main>
+</body>
+</html>
